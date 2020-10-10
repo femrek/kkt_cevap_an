@@ -227,7 +227,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin{
                       Expanded(
                         child: Container(
                           child: Text(
-                            "Geliştirici Hakkında: ",
+                            "Geliştirici Hakkında",
                             overflow: TextOverflow.fade,
                             maxLines: 1,
                             softWrap: false,
@@ -251,6 +251,41 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin{
                           openInBrowser("https://play.google.com/store/apps/dev?id=7986243585950801287");
                         },
                         child: SizedBox(height: 32, width: 32, child: SvgPicture.asset('assets/google_play_icon.svg', color: AppTheme.drawerTileText,))
+                      ),
+                      SizedBox(width: 16,),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 16,),
+                Container(
+                  height: 48,
+                  decoration: BoxDecoration(
+                      color: AppTheme.drawerTileBg
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: <Widget>[
+                      SizedBox(width: 16,),
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            "Kaynak Kodlar",
+                            overflow: TextOverflow.fade,
+                            maxLines: 1,
+                            softWrap: false,
+                            style: TextStyle(
+                              color: AppTheme.drawerTileText,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 16,),
+                      GestureDetector(
+                          onTap: () {
+                            openInBrowser("https://github.com/femrek/kkt_cevap_anahtarlari");
+                          },
+                          child: SizedBox(height: 32, width: 32, child: SvgPicture.asset('assets/github_icon.svg', color: AppTheme.drawerTileText,))
                       ),
                       SizedBox(width: 16,),
                     ],
