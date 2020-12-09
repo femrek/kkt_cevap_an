@@ -26,11 +26,11 @@ dependencies:
   flutter_full_pdf_viewer: ^1.0.6
   permission_handler: ^5.0.1+1
   fluttertoast: ^4.0.1
-  qrscan: ^0.2.17
+  qrscan: ^0.2.21
   flutter_downloader: ^1.4.4
   path_provider: ^1.6.11
   shared_preferences: ^0.5.7+3
-  flutter_svg: ^0.18.1
+  flutter_svg: ^0.19.1
   url_launcher: ^5.7.2
 
   # The following adds the Cupertino Icons font to your application.
